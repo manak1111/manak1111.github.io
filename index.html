@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- css -->
+      <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="particles-js">
+    </div>
+    <header>
+        <div class="sp-menu sp-view" >
+            <span class="material-icons" id="open">menu</span>
+        </div>
+        <nav class="pc-menu pc-view">
+            <ul>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#WORKS">WORKS</a></li>
+                <li><a href="#SKILL">SKILL</a></li>
+                <li><a href="#CONTACT">CONTACT</a></li>
+            </ul>
+        </nav>        
+        <div class="logo">
+            <h2>Manami Kano<br><span>portopholio</span></h2>
+        </div>       
+        <div class="overlay sp-view">
+            <span class="material-icons" id="close">close</span>
+            <nav class="sp-nav">
+                <ul>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#WORKS">WORKS</a></li>
+                    <li><a href="#SKILL">SKILL</a></li>
+                    <li><a href="#CONTACT">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div><!--overlay-->
+    </header>
+
+    <main>
+        <section class="about">
+            <h1 id="ABOUT">ABOUT</h1>
+            <div class="about-inner container">                
+                <div class="myphoto">
+                    <img src="img/myphoto.png" alt="自分の写真" width="200px" height="200px">
+                </div>
+                <div class="self-introduction">
+                    <p>製薬業界で仕事をしている際、ITの知識はないものの、ITを活用した業務効率化を目指すワーキングチームへ所属していました。
+                        それが、ITの世界をのぞく最初のきっかけでした。
+                    </p>
+                    <p>プログラミングスクールに通い、まずはHTML/CSSから始めてみようとWebデザイン、WordPressのコースを受講しました。
+                    </p>
+                    <p>
+                        今、ITを知らない業界でITが活用されることが期待されています。また、ITはどのような分野にも適用できる無限の可能性があります。
+                    </p>
+                    <p>私は今はまだ知識が浅いものの、これからも知識の習得を継続し、IT業界と他の業界を掛け合わせることができる、そんな人を目指したいと思います。<br>
+                        まずは小さなことでもいいので、自分ができることから始めたいと思います。
+                    </p>
+    
+                </div>                
+            </div><!-- about-inner container -->
+        </section>
+
+        <section class="works">
+            <h1 id="WORKS">WORKS</h1>           
+            <div class="works-inner container">
+                <section>
+                    <div class="pic">
+                        <a href="https://okamoto-hiryoten.com">
+                            <img src="img/hiryoten.png" alt="肥料店のホームページ" width="368px" height="207px">
+                        </a>
+                    </div>
+                    <div class="desc">
+                        <h2>肥料店のサイト</h2>
+                        <p>知人のお店のホームページを作成しました。現在、閉店しておりますが、了承を得て掲載させて頂いております。</p>
+                        <p>サイト設計、ワイヤーフレームの作成、デザインカンプの作成、コーディング、Wordpressへの組み込みを実施しました。</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="pic">
+                       <img src="img/personalgym.png" alt="パーソナルジムのホームページ" width="368px" height="207px"> 
+                    </div>
+                    <div class="desc">
+                        <h2>パーソナルジムのサイト<br>(架空のサイト)</h2>
+                        <p>女性をターゲットとしたパーソナルジムのサイト（架空のサイト）を作成しました。</p>
+                        <p>Javascriptにてスライドショー、アコーディオンなどを実装しております。</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="pic">
+                        <img src="img/game.png" alt="たまよけゲーム" width="200px" height="240px"> 
+                     </div>
+                     <div class="desc">
+                         <h2>たまよけゲーム</h2>
+                         <p>プレーヤー（矢印）に弾があたるとGameOverとなる簡単なゲームです。</p>
+                         <p>Javascriptでライブラリを使用せず、canvas要素に描画して作成しました。</p>
+                     </div>
+                </section>
+            </div><!-- works-inner container -->
+        </section><!-- works -->
+
+        <section class="skill">
+            <h1 id="SKILL">SKILL</h1>
+            <div class="skill-inner container">
+                <section>
+                    <div class="mark">
+                        <i class="devicon-html5-plain"></i>
+                        <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80px" /> -->
+                    </div>
+                    <div class="desc">
+                        <h2>HTML5/CSS3</h2>
+                        <p>レスポンシブデザインの対応が可能です。エディタはVScodeを使用しています。スクールではAWS cloud9を使用しておりました。</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="mark">
+                        <i class="devicon-javascript-plain"></i>         
+                    </div>
+                    <div class="desc">
+                        <h2>JavaScript</h2>
+                        <p>ホームページに動きを加えるなどの簡単なコードが書けます。ミニアプリを製作できるよう継続して勉強中となります。</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="mark">
+                        <i class="devicon-wordpress-plain"></i>          
+                    </div>
+                    <div class="desc">
+                        <h2>WordPress</h2>
+                        <p>静的サイトをテンプレート化してWordPressに組み込めます。ローカル環境はMAMPを使用しています。</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="mark">
+                        <i class="devicon-photoshop-line"></i>
+                    </div>
+                    <div class="desc">
+                        <h2>Photoshop</h2>
+                        <p>デザインカンプの作成や写真の加工にPhotoShopを使用しています。基本的な操作が可能です。</p>
+                    </div>
+                </section>
+            </div>
+        </section><!-- skill -->
+
+        <section class="contact">
+            <h1 id="CONTACT">CONTACT</h1>
+            <div class="contact-inner container">
+                <p>ポートフォリオサイトをご覧いただき、ありがとうございます。</p>
+                <p>ご連絡は下のメールボタンより、お願い致します。</p>
+                
+                        <div class="btn">
+
+                            <span class="material-icons">mail_outline</span>
+                        </div>
+                   
+            </div>
+
+        </section><!-- contact -->
+
+    </main>
+    <footer>
+        <p><small>&copy;2022 - ManamiKano - </small></p>
+    </footer>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

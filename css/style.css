@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+/* common */
+
+body {
+	font-family: 'EB Garamond', serif;
+}
+
+h1 {
+	font-weight: normal;
+	letter-spacing: 0.12rem;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	text-align: center;
+}
+
+p{
+	line-height: 1.5rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+.material-icons {
+	color:#fff;
+	font-size: 38px;
+	padding:16px;
+	cursor: pointer;
+}
+/* background star */
+
+#particles-js{ 
+  position:fixed;
+  top:0;
+  z-index:-1;/*描画を一番下に*/
+  height:800px;
+  max-width: 100%;
+  height: 100%;
+  background-color:#020E34;/*背景色*/
+}
+/* header */
+header {
+	height: 800px;
+	width:100%;
+	position:relative;
+}
+
+
+.sp-menu #open {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.sp-menu #open.hide {
+	display: none;
+}
+.pc-menu ul {
+	font-size:20px;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	padding:30px 20px;
+	margin-left: auto;
+}
+
+.pc-menu li {
+	padding:0 8px 5px;
+	margin-right: 30px;
+	position:relative;
+}
+.pc-menu a {
+  font-size:larger;
+  color: #fff;
+}
+
+.pc-menu li::before {
+	background: #fff;
+	content: '';
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+	transform-origin: right top;
+	transform: scale(0, 1);
+	transition: transform .3s;
+}
+
+.pc-menu li:hover::before {
+	transform-origin: left top;
+	transform: scale(1, 1);
+}
+
+/* logo */
+
+.logo{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%) ;
+	color:#fff;
+	font-family: 'Allura', cursive;
+	padding:0 80px;
+}
+.logo h2 {
+	font-size:40px;
+	font-weight: bold;
+}
+
+/* overlay sp-menu */
+
+.overlay {
+	position:absolute;
+	top:0;
+	height:250px;
+	width:100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity .6s;
+}
+
+.overlay.show {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.overlay .material-icons, .overlay nav a {
+	color:#020E34;
+}
+
+.overlay #close {
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+.overlay ul {
+	list-style-type: none;
+	font-size: 20px;
+	width:150px;
+	margin: 40px auto;
+}
+
+.overlay li {
+	margin-top: 24px;
+	transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+/* main */
+main {
+	background-color: #fff;
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+main h1{
+	text-align: center;
+	padding-top:80px;
+	padding-bottom: 40px;
+}
+
+.container {
+	width:80%;
+	max-width:950px;
+	margin: auto;
+}
+
+/* about */
+.myphoto img {
+	display: block;
+	margin: auto;
+}
+.self-introduction {
+	line-height: 1.8rem;
+	margin-top: 30px;
+}
+
+/* works */
+.works section {
+	margin-top: 80px;
+}
+
+.works .pic {
+	width:400px;
+	max-width: 100%;
+	margin: auto;
+}
+.works img {
+	filter: drop-shadow(3px 3px 3px #333);
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	transition-duration: .5s;
+}
+
+.works img:hover {
+	transform: scale(1.05);
+}
+
+.works .desc {
+	width:368px;
+	margin: auto;
+}
+
+/* skill */
+.skill .mark {
+	width:120px;
+	height: 160px;
+	background-color: #eee;
+	text-align: center;
+	margin: auto;
+}
+
+.mark i {
+	font-size:100px;
+	color:rgb(60, 60, 60);
+	line-height: 160px;
+}
+.skill-inner {
+	display: flex;
+	flex-wrap: wrap;
+	gap:30px;
+}
+
+.skill-inner section {
+	width:calc((100% - 30px) / 2);
+
+}
+
+/* contact */
+
+.contact {
+	text-align: center;
+}
+
+.contact .btn {
+	width:70px;
+	height: 70px;
+	border-radius: 50%;
+	background-color: #020E34;
+	margin: auto;
+}
+
+
+
+/* footer */
+
+footer {
+	color:#fff;
+	text-align: center;
+}
+
+
+
+/* responsive */
+.pc-view{
+	display: none;
+}
+
+@media(min-width:768px) {
+
+.pc-view {
+	display: block;
+}
+.sp-view {
+	display: none;
+}
+/* about */
+.about-inner {
+	display: flex;
+	gap:50px;
+}
+.myphoto{
+	margin-top: 30px;
+}
+.self-introduction{
+	margin-top: 0;
+}
+/* works */
+.works section {
+	display: flex;
+	justify-content: center;
+	gap:30px;
+}
+
+.works img {
+	margin-top: 10px;
+}
+
+.works section:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+/* skill */
+
+.skill-inner section {
+	width:calc((100% - 90px) / 4);
+
+}
+
+
+
+
+
+
+}
