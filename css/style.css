@@ -41,7 +41,18 @@ a{
   max-width: 100%;
   height: 100%;
   background-color:#020E34;/*背景色*/
+  animation: bg-color 25s ease 1s infinite alternate;
 }
+
+@keyframes bg-color {
+	0% { background-color: #020E34; }
+	20% { background-color: #071a59; }
+	50% { background-color: #907fac; }
+	60% { background-color: #a18cd1; }
+	80% { background-color: #a18cd1; }
+	100% { background-color: #77a8f7; }
+  }
+
 /* header */
 header {
 	height: 800px;
@@ -210,6 +221,7 @@ main h1{
 
 .works .desc {
 	width:368px;
+	max-width: 100%;
 	margin: auto;
 }
 
